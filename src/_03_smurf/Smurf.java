@@ -1,4 +1,7 @@
 package _03_smurf;
+
+import javax.swing.JOptionPane;
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
@@ -23,10 +26,14 @@ public class Smurf {
 	public String getName() {
 		return "My name is " + name + " Smurf.";
 	}
-
+    public void hhh() {
+    	JOptionPane.showMessageDialog(null, "test");
+    }
 	public void eat() {
 		System.out.println(name + " Smurf is eating Smurfberries.");
+		JOptionPane.showMessageDialog(null, name + "widu2914");
 	}
+
 
 	/* Papa Smurf wears a red hat, all the others are white. */
 	public String getHatColor() {

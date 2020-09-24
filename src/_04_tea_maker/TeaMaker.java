@@ -3,7 +3,7 @@ package _04_tea_maker;
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
  */
-
+import javax.swing.JOptionPane;
 public class TeaMaker {
 
 	/* Figure out how to make a cup of tea in this runner class, using the other classes below */
@@ -21,10 +21,14 @@ class TeaBag {
 
 	TeaBag(String flavor) {
 		this.flavor = flavor;
+
 	}
 
 	String getFlavor() {
+		JOptionPane.showMessageDialog(null, " " + flavor);
 		return flavor;
+
+		
 	}
 
 }
@@ -35,10 +39,12 @@ class Kettle {
 
 	Water getWater() {
 		return water;
+		
 	}
 
 	void boil() {
 		this.water.isHot = true;
+	
 	}
 
 	class Water {
@@ -47,6 +53,7 @@ class Kettle {
 
 		public boolean isHot() {
 			return this.isHot;
+			
 		}
 	}
 
